@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * hook_schema()
+ */
+function contact_directory_schema() {
+
+  $schema['contact_directory'] = array(
+    'description' => 'To store contact details of clients',
+    'fields' => array(
+      'cdid' => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique ID.',
+      ),
+      'cdfname' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'First name of the client.',
+      ),
+      'cdlname' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Last name of the client.',
+      ),
+      'cdemail' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Email id of the client.',
+      ),
+      'cdphone' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'default' => 0,
+        'length' => 10,
+        'description' => 'Contact number.',
+      ),
+      'cdaddress' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Address of the client.',
+      ),
+      'cdcomments' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Comments or other details of the client.',
+      ),
+      'cdstatus' => array(
+        'description' => 'User contact status',
+        'type' => 'varchar',
+         'length' => 8,
+        'not null' => TRUE,
+        'default' => 'Active',
+      ),
+    ),
+    'primary key' => array('cdid'),
+  );
+  return $schema;
+}

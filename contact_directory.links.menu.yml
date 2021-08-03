@@ -1,0 +1,5 @@
+contact_directory.form:
+  route_name: contact_directory.form
+  title: 'Contact Directory'
+  description: 'Allows to save contacts.'
+  parent: main

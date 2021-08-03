@@ -1,0 +1,5 @@
+# Permission specification file.
+contact access content:
+  title: 'Bypass contact access control'
+  description: 'Bypass access control when accessing contacts stored in the websites.'
+  restrict access: TRUE

@@ -1,0 +1,10 @@
+directory-styling:
+  version: 1.x
+  css:
+    layout:
+      css/directory.css: {}
+  js:
+      js/directory.js: {}
+  dependencies:
+   - core/jquery
+   - core/drupal

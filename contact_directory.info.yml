@@ -1,0 +1,8 @@
+name: Contact Information Storing Directory
+description: 'A contact form with details list'
+type: module
+package: Custom
+core_version_requirement: ^8.8.0 || ^9
+version: '1.0.0'
+libraries:
+  - directory-styling
